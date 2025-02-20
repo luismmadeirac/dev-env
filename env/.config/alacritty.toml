@@ -1,0 +1,44 @@
+[env]
+TERM = "alacritty"
+
+[window]
+decorations     = "none"
+dynamic_padding = false
+dynamic_title   = true
+opacity         = 0.2
+startup_mode    = "Maximized"
+title           = "Alacritty"
+padding.x = 5
+padding.y = 5
+
+
+[window.dimensions]
+columns = 0
+lines   = 0
+
+[cursor]
+unfocused_hollow = true
+vi_mode_style    = "None"
+
+[font]
+builtin_box_drawing = false
+size                = 13
+
+[font.normal]
+family = "FiraMono Nerd Font Mono"
+style  = "Regular"
+
+[mouse]
+hide_when_typing = true
+
+[debug]
+highlight_damage   = false
+log_level          = "Warn"
+persistent_logging = false
+print_events       = false
+render_timer       = false
+
+[general]
+# alacritty.toml
+
+live_config_reload = true
