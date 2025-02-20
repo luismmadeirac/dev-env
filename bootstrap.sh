@@ -25,4 +25,5 @@ git clone https://github.com/luismmadeirac/dev-env $HOME/personal/dev
 # Init dev configuration
 pushd $HOME/personal/dev
 ./run
+./env/dev-env.sh/
 popd
