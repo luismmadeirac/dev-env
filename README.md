@@ -9,3 +9,16 @@ curl -fsSL https://raw.githubusercontent.com/luismmadeirac/dev-env/main/bootstra
 ## Getting Started
 
 **[IMPORTANT]: There's a nuke script in [./resources/mac/nuke-init-apps.sh](./resources/mac/nuke-init-apps.sh) that just kills / deletes a bunch of default mac-os apps. If you don't want to have that happen then update that file or just remove it from [./resources/mac/init.sh](./resources/mac/init.sh)**
+
+## Execuction Order
+
+```tree
+.
+├── env/ # Dev Env Configuations
+├── scripts/ 
+├── resrouces/
+│   ├── mac/ # Various mac-os default overwrites
+├── bootstrap.sh
+├── dev-env.sh # Setup env/
+└── run.zsh # Runs all scripts/
+```
