@@ -1,20 +1,17 @@
 #!/usr/bin/env bash
 
-# Check if it is install if not install it
-xcode-select --install
-
-# Check for updates
-
-# This script goes through the list of apps (brew casks) and checks if they are install if not it installs them
-if [[ $EUID -ne 0 ]]; then
-    echo "This script must be run with sudo."
-    exit 1
+# Check if Xcode Command Line Tools are installed
+if ! xcode-select -p &>/dev/null; then
+    echo "Installing Xcode Command Line Tools..."
+    xcode-select --install
+    # Wait for installation to complete
+    until xcode-select -p &>/dev/null; do
+        sleep 5
+    done
+    echo "Xcode Command Line Tools installation completed."
+else
+    echo "Xcode Command Line Tools already installed."
 fi
-
-BREW_PACKAGES=(
-    wget
-    htop
-)
 
 BREW_PACKAGES=(
     wget
@@ -31,7 +28,6 @@ BREW_APPS=(
     postman
     sf-symbols
     ray
-    nikitabobko/tap/aerospace
 )
 
 # Update and upgrade Homebrew
@@ -46,8 +42,8 @@ for package in "${BREW_PACKAGES[@]}"; do
     fi
 done
 
-for app in "${CASK_APPS[@]}"; do
-    if ! brew list --cask | grep -q "^$app\$"; then
+for app in "${BREW_APPS[@]}"; do
+    if ! brew list --cask | grep -q "^${app##*/}\$"; then
         brew install --cask "$app"
     else
         echo "$app is already installed."
