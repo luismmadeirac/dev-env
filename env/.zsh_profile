@@ -1,12 +1,12 @@
 export XDG_CONFIG_HOME=$HOME/.config
 VIM="nvim"
 
-PERSONAL=$XDG_CONFIG_HOME/personal
-DEV_ENV=$HOME/dev
+# PERSONAL=$XDG_CONFIG_HOME/personal
+DEV_ENV=$HOME/personal/dev
 
-for i in `find -L $PERSONAL`; do
-    source $i
-done
+# for i in `find -L $PERSONAL`; do
+#    source $i
+# done
 
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -15,6 +15,11 @@ export GOPATH=$HOME/.local/go
 export GIT_EDITOR=$VIM
 export N_PREFIX="$HOME/.local/n"
 export DEV_ENV_HOME="$HOME/personal/dev"
+export DEV_ENV="$HOME/personal/dev"
+
+dev_env() {
+
+}
 
 catr() {
     tail -n "+$1" $3 | head -n "$(($2 - $1 + 1))"

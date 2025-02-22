@@ -20,13 +20,13 @@ alias a="ansible"
 alias t="tmux"
 alias v="nvim ."
 
-alias wifi="$HOME/personal/dev/env/scripts/wifi.sh"
-alias kp="$HOME/personal/dev/env/scripts/kill-process.sh"
+alias wifi="$HOME/.local/scripts/wifi.sh"
+alias kp="$HOME/.local/scripts/kill-process.sh"
 
-alias wh="$HOME/personal/dev/env/scripts/world-hour.sh"
-alias password="$HOME/personal/dev/env/scripts/world-hour.sh"
-alias ssh-gen="$HOME/personal/dev/env/scripts/ssh-gen.sh"
-alias dev-env="$HOME/Personal/dev-env.sh"
+alias wh="$HOME/.local/scripts/world-hour.sh"
+alias password="$HOME/.local/scripts/world-hour.sh"
+alias ssh-gen="$HOME/.local/scripts/ssh-gen.sh"
+alias dev-env="$HOME/.local/dev-env.sh"
 
 
 # Go to Syott Development dir
