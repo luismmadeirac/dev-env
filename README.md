@@ -11,7 +11,7 @@ XX min script to setup new mac.
 Copy and past the command below, this will run the entire thing, no need to have git installed or anything installed at this point, simply run this, script on terminal and let it go.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/luismmadeirac/dev-env/main/bootstrap.sh | bash
+curl -fsSL https://raw.githubusercontent.com/luismmadeirac/dev-env/main/mac-bootstrap.sh | bash
 ```
 
 If you have git installed already just clone the repo.
