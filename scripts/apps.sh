@@ -14,20 +14,35 @@ else
 fi
 
 BREW_PACKAGES=(
-    wget
+    # https://htop.dev/
     htop
+    # https://github.com/ajeetdsouza/zoxide
+    zoxide
+    # https://github.com/laurikari/tre
+    tree
 )
 
 BREW_APPS=(
+    # https://github.com/keycastr/keycastr
+    keycastr
+    # https://raycast.com/
     raycast
+    # https://obsidian.md/
     obsidian
+    # https://www.google.com/chrome/
     google-chrome
+    # https://ghostty.org/
     ghostty
+    # https://www.figma.com/
     figma
+    # https://www.docker.com/
     docker
+    # https://www.postman.com/
     postman
+    # https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
     sf-symbols
-    ray
+    # https://tableplus.com/
+    tableplus
 )
 
 # Update and upgrade Homebrew
