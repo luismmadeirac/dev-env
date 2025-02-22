@@ -12,6 +12,10 @@ alias sz='source ~/.zshrc'
 alias c='clear'
 
 alias d='docker'
+alias k="kubectl"
+alias h="helm"
+alias tf="terraform"
+alias a="ansible"
 
 alias t="tmux"
 alias v="nvim ."
@@ -22,6 +26,7 @@ alias kp="$HOME/personal/dev/env/scripts/kill-process.sh"
 alias wh="$HOME/personal/dev/env/scripts/world-hour.sh"
 alias password="$HOME/personal/dev/env/scripts/world-hour.sh"
 alias ssh-gen="$HOME/personal/dev/env/scripts/ssh-gen.sh"
+alias dev-env="$HOME/Personal/dev-env.sh"
 
 
 # Go to Syott Development dir
