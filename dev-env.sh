@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 dry_run="0"
+DEV_ENV="$HOME/dev-new"
 
 if [ -z "$XDG_CONFIG_HOME" ]; then
     echo "no xdg config hom"
@@ -59,13 +60,30 @@ copy_file() {
     execute cp $from $to/$name
 }
 
+copy() {
+    log "removing: $2"
+    if [[ $dry_run == "0" ]]; then
+        rm $2
+    fi
+    log "copying: $1 to $2"
+    if [[ $dry_run == "0" ]]; then
+        cp $1 $2
+    fi
+}
+
+if [ ! -d $HOME/personal ]; then
+    mkdir $HOME/personal
+fi
+
 # copy_file .specialrc $HOME
 
 # update_files $DEV_ENV/env/.config $XDG_CONFIG_HOME
 # update_files $DEV_ENV/env/.local $HOME/.local
 
 # copy $DEV_ENV/tmux-sessionizer/tmux-sessionizer $HOME/.local/scripts/tmux-sessionizer
-copy $DEV_ENV/env/.zsh_profile $HOME/.zsh_profile
-copy $DEV_ENV/env/.zshrc $HOME/.zshrc
 # copy $DEV_ENV/env/.tmux-sessionizer $HOME/.tmux-sessionizer
 # copy $DEV_ENV/dev-env $HOME/.local/scripts/dev-env
+
+copy $DEV_ENV/env/.zsh_profile $HOME/.zsh_profile
+copy $DEV_ENV/env/.zsh_alias $HOME/.zsh_alias
+copy $DEV_ENV/env/.zshrc $HOME/.zshrc
