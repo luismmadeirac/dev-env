@@ -28,12 +28,14 @@ alias wh="$HOME/.local/scripts/world-hour.sh"
 alias ssh-gen="$HOME/.local/scripts/ssh-gen.sh"
 alias dev-env="$HOME/.local/scripts/dev-env.sh"
 
+# Pesonal dev
+alias dev="cd $HOME/personal/dev"
 
-# Go to Syott Development dir
-alias wdir='cd ~/Developer/work/'
+# Personal Project dir
+alias ppj="cd $HOME/personal/projects"
 
-# Go to personal developmern dir
-alias pdir= 'cd ~/Developer/personal/'
+# Work dir
+alias wd="cd $HOME/Developer/work"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
