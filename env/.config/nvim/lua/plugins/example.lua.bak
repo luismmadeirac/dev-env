@@ -16,7 +16,11 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
     },
   },
 
@@ -121,6 +125,8 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "go",
+        "C",
         "html",
         "javascript",
         "json",
