@@ -2,6 +2,7 @@
 
 echo "Bootstraping configuration for new mac..."
 
+
 # Look for homebrew and if not found install it
 if ! command -v brew &>/dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

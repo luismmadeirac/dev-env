@@ -70,9 +70,9 @@ copy() {
 # ZSH alias will the clal this scripts in that location
 
 update_files $DEV_ENV/env/.config $XDG_CONFIG_HOME
-# update_files $DEV_ENV/env/.local/scripts/ $HOME/.local
+update_files $DEV_ENV/env/.local $HOME/.local
 
-copy $DEV_ENV/dev-env.sh $HOME/.local/scripts/dev-env
+copy $DEV_ENV/dev-env.sh $HOME/.local/scripts
 
 copy $DEV_ENV/env/.zsh_profile $HOME/.zsh_profile
 copy $DEV_ENV/env/.zsh_alias $HOME/.zsh_alias
