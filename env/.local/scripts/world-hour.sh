@@ -11,14 +11,14 @@ show_time_in_timezone() {
 }
 
 # Display formatted table header
-echo "+----------------------+---------------------------+\n"
-echo "|      Timezone        |           Current Time     |\n"
-echo "+----------------------+---------------------------+\n"
+echo "+----------------------+-----------------------------------------+\n"
+echo "|      Timezone        |           Current Time                  |\n"
+echo "+----------------------+-----------------------------------------+\n"
 
 # Display current time in each timezone
 for timezone in "${timezones[@]}"; do
     show_time_in_timezone "${timezone}"
 done
 
-# Display formatted table footer
-echo "+----------------------+---------------------------+\n"
+# Display formatted table foote
+echo "+----------------------+-----------------------------------------+\n"
