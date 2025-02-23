@@ -23,10 +23,10 @@ alias v="nvim ."
 alias wifi="$HOME/.local/scripts/wifi.sh"
 alias kp="$HOME/.local/scripts/kill-process.sh"
 
+alias password="$HOME/.local/scripts/password.sh"
 alias wh="$HOME/.local/scripts/world-hour.sh"
-alias password="$HOME/.local/scripts/world-hour.sh"
 alias ssh-gen="$HOME/.local/scripts/ssh-gen.sh"
-alias dev-env="$HOME/.local/dev-env.sh"
+alias dev-env="$HOME/.local/scripts/dev-env.sh"
 
 
 # Go to Syott Development dir
