@@ -65,10 +65,6 @@ copy() {
   fi
 }
 
-# Essentially all the contents in here would be already in personal/dev becasue of the git clone
-# So the update_files woudl take the contents in personal/dev inton $HOME/ becoming $HOME/.local/scripts
-# ZSH alias will the clal this scripts in that location
-
 update_files $DEV_ENV/env/.config $XDG_CONFIG_HOME
 update_files $DEV_ENV/env/.local $HOME/.local
 
