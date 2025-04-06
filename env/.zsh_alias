@@ -35,7 +35,14 @@ alias dev="cd $HOME/personal/dev"
 alias ppj="cd $HOME/personal/projects"
 
 # Work dir
-alias wd="cd $HOME/Developer/work"
+alias wd="cd $HOME/work"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+
+# Toggle macOS appearance
+alias toggle-theme="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
+alias dark="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'"
+alias light="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
+

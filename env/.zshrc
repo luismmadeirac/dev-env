@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 source ~/.zsh_alias
 
+GOPATH=$HOME/go  PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
