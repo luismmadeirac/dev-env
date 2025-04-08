@@ -30,6 +30,12 @@ Below is a table of some of the alias configured in [zsh alias file](./env/.zsh_
 | password |  Calls [password.sh](./env/.local/scripts/password.sh) simply outputs a random password, sort of like password generator |
 | kp |  Kill Process, Calls [kill-process.sh](./env/.local/scripts/kill-process.sh) kills processes on macos pre self explanatory |
 | ht |  So, so, so useful (not at all!) Calls [world-hour.sh](./env/.local/scripts/world-hour.sh) basically outputs the hour in different timezones. Really just use this for very specific cases when I need to know the hour in some specific reacurent timezones and I'm too lazy to google it |
+| dev-env | be careful with this one... or at least run it first with --dry-run |
+| toggle-theme | Well this is a hard one too explain, hmmm. Well it toggles between light and dark on mac |
+| dark | Why do I even have this... am i really that lazy to type `toggle-theme`... well this just sets the them to dark on macos |
+| light | Guess out Genious this toggles it back to white theme |
+| afk | [All explanation you need](https://www.youtube.com/shorts/PHjAzY_VPtE) |
+
 
 ## Random Stupid Scripts
 
