@@ -1,0 +1,1 @@
+# Fresh Mac Getting Started detail explanation
