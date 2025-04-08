@@ -24,6 +24,9 @@ alias wifi="$HOME/.local/scripts/wifi.sh"
 alias kp="$HOME/.local/scripts/kill-process.sh"
 
 alias blackout="$HOME/.local/scripts/blackout.sh"
+alias change-background="$HOME/.local/scripts/background.sh"
+
+
 alias password="$HOME/.local/scripts/password.sh"
 alias wh="$HOME/.local/scripts/world-hour.sh"
 alias ssh-gen="$HOME/.local/scripts/ssh-gen.sh"
