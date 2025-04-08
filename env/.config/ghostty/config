@@ -6,7 +6,7 @@ macos-titlebar-style=hidden
 theme=Framer
 background=000000
 cursor-text=#FFF
-background-opacity=0.7
+# background-opacity=0.7
 
 # shell-integration-features=no-cursor,no-sudo,no-title
 gtk-titlebar=false

@@ -1,2 +1,2 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
-require("luismamdeirac.lazy")
+require("luismmadeirac.init")
