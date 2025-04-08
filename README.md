@@ -25,7 +25,7 @@ If you have git installed already just clone the repo.
 │   ├── scripts/
 │   ├── .zsh_profile
 │   ├── .zshrc
-├── scripts/ 
+├── scripts/
 ├── resrouces/
 │   ├── mac/ # Various mac-os default overwrites
 ├── bootstrap.sh
