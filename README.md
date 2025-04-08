@@ -14,9 +14,11 @@ curl -fsSL https://raw.githubusercontent.com/luismmadeirac/dev-env/main/bootstra
 
 **[IMPORTANT]:**
 
-If you currently have your mac already setup and running like you want it make to not run the scribe above, that script not only changes a LOT of MacOS System defaults it also Nukes a lot of applications and configurations that most likely you do not intend to have them completly nuked from your system. 
+If you currently have your mac already setup and running like you want it make to not run the scribe above, that script not only changes a LOT of MacOS System defaults it also Nukes a lot of applications and configurations that most likely you do not intend to have them completly nuked from your system.
 
-----
+## Dev Env
+
+There is a script called [dev-env](./dev-env.sh) that mostly responsive for the development setup, if you are only interested in the development enviroment part of this repository maybe start from there you can get a better details information of how it all works in the [Dev Enviroment - Getting Starter](./docs/dev-enviroment/getting-started.md);
 
 ## ZSH Alias References
 
@@ -37,14 +39,13 @@ Below is a table of some of the alias configured in [zsh alias file](./env/.zsh_
 | light | Guess out Genious this toggles it back to white theme |
 | afk | [All explanation you need](https://www.youtube.com/shorts/PHjAzY_VPtE) |
 
+
 ## Random Stupid Scripts
 
 There are a couple of scripts in the [scripts dir](./env/.local/scripts), that are absolutly worthless. 
 
 One of those scripts is mapped with an [alias](./env/.zsh_alias) as `nr` this script basically just lists out the next upcoming F1 Race by pulling the data from a [f1 schedule txt file](./env/.local/scripts/f1_schedule.txt);
 
-
----
 
 ## Repository Structure
 
