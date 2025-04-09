@@ -1,4 +1,4 @@
-# Nvim CheatSheet
+# Nvim Cheatsheet
 
 # Neovim Keymap Summary
 
