@@ -97,7 +97,7 @@ The final step of the [Bootstrap Script](../../bootstrap.sh) essential forces a 
 
 The table below is a list of quick links to all the scripts used in the macOS configuration so you can easily reference and jump to them.
 
-*Side note: The order in which the scripts are listed below is the actual order in which the scripts get executed through the[Init](../../resources/mac/init.sh)*
+*Side note: The order in which the scripts are listed below is the actual order in which the scripts get executed through the [Init](../../resources/mac/init.sh)*
 
 
 | Script Name (Link)                                             | Description                                                                  | 
