@@ -39,6 +39,59 @@ I think you get the point by now this will just perform way too many System chan
 
 I advice you to Investigate further what each script does and maybe twick them before running the `bootstrap` blindly. I've attached a list of the System Scripts below so you can reference the actual scripts and check them. I believe the scripts a pretty self explanatory and contian enough notes so you know what does what.
 
+----
+**GEMINI GENERATED NEEDS TO BE INSPECTED**
+
+
+## Step 5: Running Initial Setup (run)
+
+After abliterating through the macOS default changes and everything the next step of the bootstrap script is to try and install all the necessary additional things for the development enviroment. Util this posint everything that was done was nothing more then just setting up a new mac and changing the factory reset way that the macOS comes in. This part of the script now is all about installing apps and things to run the development enviroment. 
+
+The [run script](../../run.sh) will be called which basically looks inside the [scripts dir](../../scripts) and executes them one by onem, some of those script just run some brew installs or taps others go do a bit more then that. Just for referance below is a full list of of all the scripts and more or less an explanation of what they do. 
+
+*Note: There are comments/notes insdie each script file more or less detailing what each script does but most of them are pretty much self explanatory once you look at the code and if you are more or less familiar witth basic bash*
+
+
+| Script File                               | Description                                      | 
+| ----------------------------------------- | ------------------------------------------------ |
+| [apps](../../scripts/apps.sh)             | Installs various apps through home brew          | 
+| [aws](../../scripts/aws-credentials.sh)   | Install the AWS CLI                              | 
+| [cdk](../../scripts/cdk)                  | Install AWS CDK                                  | 
+| [aws-credentials](../../scripts/aws.sh)   | Configures AWS Credentials                       | 
+| [borders](../../scripts/borders.sh)       | Install Borders with homebrew                    | 
+| [git](../../scripts/git.sh)               | Configures Git Credentials                       | 
+| [go](../../scripts/go.sh)                 | Installs Go Lang                                 | 
+| [libs](../../scripts/libs.sh)             | Install additional tools                         | 
+| [nvim](../../scripts/nvim.sh)             | Downsloads nvim latest version from git          | 
+| [pullumi](../../scripts/pulumi.sh)        | Installs Pulumi                                  | 
+| [terraform](../../scripts/terraform.sh)   | Installs Terraform                               | 
+| [kubctl](../../scripts/kubectl.sh)        | Installs Kubctl                                  | 
+| [minikube](../../scripts/minikube.sh)     | Installs Minikube (local kubernetes)             | 
+| [tilt](../../scripts/tilt.sh)             | Installs Tilt                                    | 
+| [sketchybar](../../scripts/sketchybar.sh) | Installs Sketchybar (replaces macOS top bar)     | 
+| [tmux](../../scripts/tmux.sh)             | Installs Tmux                                    | 
+| [node](../../scripts/node.sh)             | Installs Node                                    | 
+| [zsh](../../scripts/zsh.sh)               | Installs ZSH                                     |
+
+
+*Note: the order in each they show on the table above is not necessarly the order the files are structure in the folder*
+
+## Step 6: Applying Environment Configuration (env/dev-env.sh)
+
+There is a script file called dev-env that basically everytime you run it (unless with the flag `--dry-run`) it will absolutly Nuke everything you have inside your `$HOME/.config` and replace it with whatever is inside your `$HOME/personal/dev/env/.config`. 
+
+Essential all configuration files for all the applications are stored in [env/.config/](../../env/.config/). There is also an alias `dev-env` that can be run from anywhere after this which calls this script [dev-env.sh](../../dev-env.sh). I recomend you to always run this first with the flag `--dry-mode`. This will give you a output of what the script will do before it actually does it.
+
+**IMPORTANT: If you plan on using any of this or specially this script make sure to backup everything or just renaming or root `.config/` dir before you go beyound repair.**
+
+-----
+## Final Step
+
+The final step of the [Bootstrap Script](../../bootstrap.sh) essential forces a restart to your computer. This is required because some of the changes that we have made will only take effect after a complete computer retart. So if after running all this your computer just goes black it kinda normal, its just restarting.
+
+
+
+
 
 ## List of MacOs System Script
 
