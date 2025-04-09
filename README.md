@@ -6,7 +6,7 @@ This repo contains all my personal configurations for setting up a new Mac as we
 
 To get started with a new Mac, just open the default MacOS Terminal and copy and paste the command shown below. This will kick off a series of script files that will both change a lot of System default configurations on your Mac, install a bunch of crap, and nuke a bunch of default Apps and stuff that comes installed by default on MacOS. 
 
-For a full explanation and guide of what this bootstrap script does and what sub-scripts it runs, please check the [documentation here](./docs/fresh-mac/getting-started.md);
+For a full explanation and guide of what this bootstrap script does and what sub-scripts it runs, please check the [documentation here](./docs/macOS/getting-started.md);
 
 
 ```bash
