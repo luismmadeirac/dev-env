@@ -45,7 +45,7 @@ return {
     },
     window = {
       position = "left", -- Make sure this matches the position in the keymap command
-      width = 30,
+      width = 50,
       mapping_options = { noremap = true, nowait = true },
       mappings = {
         ["<Esc>"] = "close_window",
