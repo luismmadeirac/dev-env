@@ -84,20 +84,6 @@ check_aws_cli_update() {
   fi
 }
 
-configure_aws_cli() {
-  log "Would you like to configure AWS CLI credentials?"
-  read -p "Configure AWS CLI now? (y/n) " -n 1 -r
-  echo
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
-    aws configure
-    if [ $? -eq 0 ]; then
-      log "AWS CLI configured successfully!"
-    else
-      log "Failed to configure AWS CLI. Please try again manually using 'aws configure'"
-    fi
-  fi
-}
-
 if [[ "$DRY_RUN" == true ]]; then
   log "DRY" "Running in dry-run mode"
   log "DRY" "Filter: $filter"
@@ -111,5 +97,3 @@ else
   log "AWS CLI not found. Starting installation process..."
   install_aws_cli
 fi
-
-configure_aws_cli
