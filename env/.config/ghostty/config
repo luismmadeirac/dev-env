@@ -1,0 +1,16 @@
+
+title=" "
+macos-titlebar-style = hidden
+
+theme = Catppuccin Frappe
+
+cursor-text=#FFF
+confirm-close-surface=false
+
+background-blur=true
+background=000
+background-opacity=0.85
+
+gtk-titlebar=false
+
+confirm-close-surface=false
