@@ -1,0 +1,6 @@
+[submodule "env/.config/nvim"]
+	path = env/.config/nvim
+	url = git@github.com:luismmadeirac/vconf.git
+[submodule "env/.local/backgrounds"]
+	path = env/.local/backgrounds
+	url = git@github.com:luismmadeirac/backgrounds.git
