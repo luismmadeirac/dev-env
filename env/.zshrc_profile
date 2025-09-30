@@ -1,0 +1,48 @@
+
+export CONFIG_HOME=$HOME/.config
+export XDG_CONFIG_HOME=$HOME/.config
+
+# XDG-compliant tool configurations
+export NPM_CONFIG_CACHE="$XDG_CONFIG_HOME/npm"
+export YARN_CACHE_FOLDER="$XDG_CONFIG_HOME/yarn"
+export VIM_HOME="$XDG_CONFIG_HOME/vim"
+
+# XDG-compliant zsh state directories
+export XDG_STATE_HOME="${XDG_STATE_HOME:-$HOME/.local/state}"
+export ZSH_STATE_DIR="$XDG_STATE_HOME/zsh"
+export HISTFILE="$ZSH_STATE_DIR/history"
+export ZSH_COMPDUMP="$ZSH_STATE_DIR/zcompdump"
+
+# Ensure zsh state directory exists
+mkdir -p "$ZSH_STATE_DIR"
+
+VIM="nvim"
+
+PERSONAL=$CONFIG_HOME/personal
+DEV_ENV=$HOME/Developer/dev-env/
+
+export GOPATH=$HOME/.local/go
+export PATH="/opt/homebrew/bin:$PATH"
+export GIT_EDITOR=$VIM
+export DEV_ENV_HOME="$HOME/Developer/dev-env"
+
+addToPath() {
+  if [[ "$PATH" != *"$1"* ]]; then
+    export PATH=$PATH:$1
+  fi
+}
+
+addToPathFront() {
+  if [[ "$PATH" != *"$1"* ]]; then
+    export PATH=$1:$PATH
+  fi
+}
+
+addToPathFront $HOME/.local/.npm-global/bin
+addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/.local/bin
+addToPathFront $HOME/.local/npm/bin
+
+addToPathFront $HOME/.local/go/bin
+addToPathFront /usr/local/go/bin
+addToPath $HOME/.local/personal
