@@ -16,7 +16,7 @@ alias v='nvim'
 alias p='cd $HOME/personal'
 alias w='cd $HOME/work'
 alias vaults='cd $HOME/vaults'
-alias dev-env='cd $HOME/developer/dev-env'
+alias dev-env='cd $HOME/Developer/dev-env'
 alias devr='$HOME/.local/scripts/dev-env.sh'
 
 # Shortcut: deploy and reload shell in one command
