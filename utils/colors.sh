@@ -1,0 +1,17 @@
+#!/bin/bash
+
+export RED=$(tput setaf 1)
+export GREEN=$(tput setaf 2)
+export YELLOW=$(tput setaf 3)
+export BLUE=$(tput setaf 4)
+export MAGENTA=$(tput setaf 5)
+export CYAN=$(tput setaf 6)
+export WHITE=$(tput setaf 7)
+export BOLD=$(tput bold)
+export RESET=$(tput sgr0)
+
+export COLOR_ERROR=$RED
+export COLOR_SUCCESS=$GREEN
+export COLOR_WARNING=$YELLOW
+export COLOR_INFO=$BLUE
+export COLOR_HIGHLIGHT=$CYAN
