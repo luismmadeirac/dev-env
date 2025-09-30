@@ -5,7 +5,7 @@ if [[ $# -eq 1 ]]; then
 else
     projects=(
         ~/Developer
-        ~/Developer/dev-env-v2
+        ~/Developer/dev-env
         ~/personal
         ~/work
         ~/.config
