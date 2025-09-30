@@ -60,7 +60,7 @@ confirm_warning() {
     local message="$1"
     local confirm_text="${2:-proceed}"
 
-    echo "${COLOR_WARNING}⚠️  WARNING: $message${RESET}"
+    echo "${COLOR_WARNING} WARNING: $message${RESET}"
     echo ""
     ask_yes_no "Are you sure you want to $confirm_text?"
 }

@@ -9,7 +9,7 @@ export STATE_DIR="$SCRIPT_ROOT/logs/.state"
 
 mkdir -p "$LOGS_DIR" "$STATE_DIR"
 
-export SESSION_ID="${SESSION_ID:-$(date +%Y%m%d_%H%M%S)}"
+export SESSION_ID ="${SESSION_ID:-$(date +%Y%m%d_%H%M%S)}"
 export LOG_FILE="$LOGS_DIR/setup_${SESSION_ID}.log"
 export STATE_FILE="$STATE_DIR/session_${SESSION_ID}.state"
 export PLAN_FILE="$STATE_DIR/plan_${SESSION_ID}.json"

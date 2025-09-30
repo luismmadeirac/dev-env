@@ -7,7 +7,7 @@ ensure_sudo() {
 
     until sudo -v; do
         if ((attempt >= max_attempts)); then
-            echo "❌ Failed to obtain sudo privileges after $max_attempts attempts. Exiting." >&2
+            echo "Failed to obtain sudo privileges after $max_attempts attempts. Exiting." >&2
             exit 1
         fi
         echo "Incorrect password. Please try again. (Attempt $((attempt + 1)) of $max_attempts)"
