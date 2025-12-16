@@ -2,7 +2,6 @@ alias sz='source ~/.zshrc'
 
 alias c='clear'
 
-
 # Services
 alias d='docker'
 alias k='kubectl'
@@ -21,3 +20,4 @@ alias devr='$HOME/.local/scripts/dev-env.sh'
 
 # Shortcut: deploy and reload shell in one command
 alias devrs='$HOME/.local/scripts/dev-env.sh --auto-approve && source ~/.zshrc'
+

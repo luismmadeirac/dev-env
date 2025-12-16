@@ -14,8 +14,7 @@ if [ -f "$GHOSTTY_CONFIG" ]; then
     sed -i '' 's/^theme = .*/theme = catppuccin-frappe/' "$GHOSTTY_CONFIG"
 
     echo "Ghostty config updated:"
-    echo ""
-    echo "☀️Light Normal mode activated!"
+    echo "☀️Light mode activated!"
     echo "Run: Cmd + Shift + , to pass activate mode on ghostty"
 else
     echo "Ghostty config file not found at $GHOSTTY_CONFIG"

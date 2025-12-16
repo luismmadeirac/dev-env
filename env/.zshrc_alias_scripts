@@ -8,14 +8,15 @@
 #
 # ------------------——--------------------------------------------------------------------
 
-# alias bo="$HOME/.local/scripts/bg-black.sh"
 # alias eb="$HOME/.local/scripts/eye-burner.sh"
 
 # v2
 alias bg="$HOME/.local/scripts/switch-bg.sh"
+alias bo="$HOME/.local/scripts/bg-black.sh"
 alias batman="$HOME/.local/scripts/batman.sh"
 
-alias newpass='LC_ALL=C tr -dc '[:graph:]' < /dev/urandom | head -c 36'
+alias mi1="LC_ALL=C tr -dc '[:graph:]' < /dev/urandom | head -c 12"
+alias mi5="LC_ALL=C tr -dc '[:graph:]' < /dev/urandom | head -c 36 | pbcopy && echo 'Password copied to clipboard!'"
 
 
 # OS Mac Scripts

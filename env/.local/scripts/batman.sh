@@ -27,10 +27,8 @@ if [ $? -eq 0 ]; then
         cp "$GHOSTTY_CONFIG" "$GHOSTTY_CONFIG.bak"
 
         sed -i '' 's/^# background=000/background=000/' "$GHOSTTY_CONFIG"
-
         sed -i '' 's/^background-opacity=1.0/background-opacity=0.8/' "$GHOSTTY_CONFIG"
 
-        echo "🦇 Batman mode activated!"
         echo "Run: Cmd + Shift + , to pass activate mode on ghostty"
     else
         echo "Ghostty config file not found at $GHOSTTY_CONFIG"

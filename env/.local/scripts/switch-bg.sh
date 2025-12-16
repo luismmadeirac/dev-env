@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# ----------------------------------------------------------------------------------------------
+#
+# This is a simple script to switch the macos background from a list of wallpappers
+# the list of wallpappers i used is a private git submodule of this repo.
+#
+# This is located at ./local/backgrounds when you run dev-env script it will copy everything
+# from this location and place it at ~/$HOME/.local/backgrounds and the script will read it
+# from there.
+#
+# There is an alias configure in .zshrc_alias_scripts called `bg`
+#
+# --------------------------------------------------------------------------------------------
+
 WALLPAPER_DIR="$HOME/.local/backgrounds"
 
 if [ ! -d "$WALLPAPER_DIR" ]; then
@@ -46,7 +59,6 @@ select choice in "${wallpaper_names[@]}" "Quit"; do
         if [ $? -eq 0 ]; then
             echo "Desktop background successfully set!"
         else
-            # Use current date from system
             current_date=$(date)
             echo "Error setting desktop background via osascript (Attempted on: $current_date)."
         fi
