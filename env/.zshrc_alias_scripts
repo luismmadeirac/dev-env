@@ -1,12 +1,24 @@
-# --------------------------------------------------------
-# Absolutly useless scripts
+# --------------------------------------------------------------------------------------
+# Mostly useless scripts
+#
+# Mostly here for fun or for my own personal use case and mostly named after inside
+# houshold jokes lol all scsripts stored in .local/scripts.
+#
+# Some of them are not calling any sh file just straight up inline
+#
+# ------------------——--------------------------------------------------------------------
 
-alias batman="$HOME/.local/scripts/batman.sh"
+# alias bo="$HOME/.local/scripts/bg-black.sh"
+# alias eb="$HOME/.local/scripts/eye-burner.sh"
+
+# v2
 alias bg="$HOME/.local/scripts/switch-bg.sh"
-alias bo="$HOME/.local/scripts/bg-black.sh"
-alias eb="$HOME/.local/scripts/eye-burner.sh"
-alias generate-pass="$HOME/.local/scripts/pass-gen.sh"
+alias batman="$HOME/.local/scripts/batman.sh"
 
+alias newpass='LC_ALL=C tr -dc '[:graph:]' < /dev/urandom | head -c 36'
+
+
+# OS Mac Scripts
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias dark="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'"
 alias light="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
