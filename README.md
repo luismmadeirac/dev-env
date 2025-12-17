@@ -1,5 +1,9 @@
 # Personal Dev Env (macOS) v2
 
+----
+**Note: There are current missing files on this repo, that I have not yet pushed, attempting to run any of this scripts will likely fail due to missing util scripts that have not yet been committed**
+----
+
 > **Automated macOS development environment setup and personal configuration management**
 
 This repository provides comprehensive automation for setting up a fresh Mac from scratch, including system configuration, application installation, and personal dotfiles deployment. Built with a modular bash framework, it supports both full system bootstrap and granular development environment updates.
