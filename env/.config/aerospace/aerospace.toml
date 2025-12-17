@@ -41,21 +41,25 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-b = 'workspace B' # browser workspace
 alt-s = 'workspace S' # slack workspace
 alt-t = 'workspace T' # terminal / editor (nvim) workspace
+alt-i = 'workspace I' # InteliJ (editor)
 alt-f = 'workspace F' #
 alt-g = 'workspace G' # Gather
 alt-m = 'workspace M' # Music
 alt-d = 'workspace D' # design workspace (figma)
 alt-o = 'workspace O' # obsidian (note pad) workspace
+alt-p = 'workspace P' # Postman (migtht conflict with macos print shortcut)
 
 # Moves the node (window) into a workspace
 alt-shift-b = 'move-node-to-workspace B'
 alt-shift-s = 'move-node-to-workspace S'
 alt-shift-t = 'move-node-to-workspace T'
+alt-shift-i = 'move-node-to-workspace I'
 alt-shift-d = 'move-node-to-workspace D'
 alt-shift-f = 'move-node-to-workspace F'
 alt-shift-m = 'move-node-to-workspace M'
 alt-shift-g = 'move-node-to-workspace G'
 alt-shift-o = 'move-node-to-workspace O'
+alt-shift-p = 'move-node-to-workspace P'
 
 # Enter Window into Full Screen
 # alt-shift-f = 'fullscreen'
@@ -142,3 +146,5 @@ run = "move-node-to-workspace T"
     F = 'main'
     D = 'main'
     O = 'main'
+    P = ['secondary', 'main']
+    I = 'main'

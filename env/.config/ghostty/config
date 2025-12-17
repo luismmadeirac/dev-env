@@ -1,4 +1,3 @@
-
 title=" "
 macos-titlebar-style = hidden
 
@@ -8,7 +7,7 @@ cursor-text=#FFF
 confirm-close-surface=false
 
 #background-blur=true
-#background=000
+background=000
 #background-opacity=0.85
 
 gtk-titlebar=false
