@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export SETUP_FRAMEWORK_VERSION="0.0.2"
+export SETUP_FRAMEWORK_VERSION="0.0.1"
 export SCRIPT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 export UTILS_DIR="$SCRIPT_ROOT/utils"
 export SETUP_DIR="$SCRIPT_ROOT/setup"
@@ -9,7 +9,7 @@ export STATE_DIR="$SCRIPT_ROOT/logs/.state"
 
 mkdir -p "$LOGS_DIR" "$STATE_DIR"
 
-export SESSION_ID ="${SESSION_ID:-$(date +%Y%m%d_%H%M%S)}"
+export SESSION_ID="${SESSION_ID:-$(date +%Y%m%d_%H%M%S)}"
 export LOG_FILE="$LOGS_DIR/setup_${SESSION_ID}.log"
 export STATE_FILE="$STATE_DIR/session_${SESSION_ID}.state"
 export PLAN_FILE="$STATE_DIR/plan_${SESSION_ID}.json"
@@ -36,4 +36,5 @@ export PERSONAL_DIR="$HOME/personal"
 export DEVELOPER_DIR="$HOME/developer"
 export WORK_DIR="$HOME/work"
 export VAULTS_DIR="$HOME/vaults"
-export DEV_ENV_DIR="$HOME/personal/dev-env"
+export DEV_ENV_DIR="$HOME/developer/dev-env"
+export ARCHIVE_DIR="$HOME/Archive"
