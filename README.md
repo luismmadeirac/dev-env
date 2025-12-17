@@ -156,7 +156,7 @@ XDG_STATE_HOME="$HOME/.local/state" # XDG state directory
 ├── dev-env.sh                    # Main dev environment deployment script
 ├── setup/
 │   └── ubuntu/
-│       └── macos-bootstrap.sh    # Main bootstrap orchestration for ubuntu
+│       └── bootstrap.sh          # Main bootstrap orchestration for ubuntu
 │   └── macOS/
 │       ├── prerequisites/        # Xcode CLI Tools, Homebrew
 │       ├── apps/                 # Apps install
@@ -167,7 +167,7 @@ XDG_STATE_HOME="$HOME/.local/state" # XDG state directory
 │   ├── core.sh                   # Core configuration
 │   ├── logging.sh                # Logging system
 │   ├── file_ops.sh               # Safe file operations
-│   ├── commands.sh               # Command framework
+│   ├── commands.sh               # Commands utils
 │   └── step-runner.sh            # Setup step execution
 ├── env/                          # Personal configurations to deploy
 │   ├── .config/                  # XDG config files
