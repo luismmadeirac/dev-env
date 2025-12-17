@@ -23,3 +23,7 @@ alias mi5="LC_ALL=C tr -dc '[:graph:]' < /dev/urandom | head -c 36 | pbcopy && e
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias dark="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'"
 alias light="osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
+
+
+# Tools
+alias check-versions="$HOME/.local/scripts/dev-tooling.sh"
